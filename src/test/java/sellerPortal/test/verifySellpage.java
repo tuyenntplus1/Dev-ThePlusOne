@@ -69,5 +69,6 @@ public class verifySellpage extends seller {
         checkoutFunction.stripeCheckout();
 
     }
+    //tesst github
 
 }
