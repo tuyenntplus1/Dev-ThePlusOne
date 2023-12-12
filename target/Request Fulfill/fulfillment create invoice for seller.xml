@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="fulfillment respond create invoice for seller">
+    <test name="seller create order request">
+        <classes>
+            <class name="sellerPortal.test.requestFulfill">
+                <methods>
+                    <include name="createOrderRequest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="seller request fulfill">
+        <classes>
+            <class name="sellerPortal.test.requestFulfill">
+                <methods>
+                    <include name="createRequestFulfill"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="fulfill verify and create invoice">
+        <classes>
+            <class name="fulfillPortal.test.requestFulfillment">
+                <methods>
+                    <include name="createInvoice"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="seller verify invoice by fulfillment">
+        <classes>
+            <class name="sellerPortal.test.requestFulfill">
+                <methods>
+                    <include name="rejectInvoice"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "Suite10" verbose="10">
+    <test name = "test10">
+        <classes>
+            <class name = "sellerPortal.test.createSellpage">
+                <methods>
+                    <include name="CreateEhighwaySellpage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+<!--    <test name = "test20">-->
+<!--        <classes>-->
+<!--            <class name = "sellerPortal.test.verifySellpage" />-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>

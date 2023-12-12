@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="requestSourcing 2">
+    <test name="seller request sourcing from add product 2">
+        <classes>
+            <class name="sellerPortal.test.Product">
+                <methods>
+                    <include name="requestProduct"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="fulfill verify request Sourcing 2">
+        <classes>
+            <class name="fulfillPortal.test.requestSourcingFulfill">
+                <methods>
+                    <include name="respondByEditProductSeller"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="seller accept respond ">
+        <classes>
+            <class name="sellerPortal.test.requestSourcingSeller">
+                <methods>
+                    <include name="respondByEditSellerProduct"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="fulfill verify request 3">
+        <classes>
+            <class name="fulfillPortal.test.requestSourcingFulfill">
+                <methods>
+                    <include name="verifyRequest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+<!--     Test -->
+</suite> <!-- Suite -->

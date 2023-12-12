@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "VerifyCheckOutTip" verbose="10">
+    <test name = "VerifyCheckout">
+        <classes>
+            <class name = "buyerCheckOut.test.stripe" >
+                <methods>
+                    <include name="verifySectionTip"/>
+                    <include name="verifyOrderSummaryOption1"/>
+                    <include name="verifyOrderSummaryOption2"/>
+                    <include name="verifyOrderSummaryOption3"/>
+                    <include name="verifyOrderSummaryOption4"/>
+                    <include name="verifyOrderSummaryOption5"/>
+                    <include name="verifyOrderSummaryNoTip"/>
+                    <include name="verifyOrderSummaryCustomTip"/>
+                    <include name="stripeCheckout"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name = "VerifyOrderDetailSellerPortal">
+        <classes>
+            <class name = "buyerCheckOut.test.seller1" />
+        </classes>
+    </test>
+    <test name = "VerifyOrderDetailFulfillPortal">
+        <classes>
+            <class name = "buyerCheckOut.test.fulfill" />
+        </classes>
+    </test>
+</suite>

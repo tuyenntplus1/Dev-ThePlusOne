@@ -1,0 +1,40 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "respond by new product" verbose="10">
+    <test name = "Seller request">
+        <classes>
+            <class name = "sellerPortal.test.requestSourcingSeller" >
+                <methods>
+                    <include name="requestSourcing2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name = "fulfill respond request">
+        <classes>
+            <class name = "fulfillPortal.test.requestSourcingFulfill" >
+                <methods>
+                    <include name="respondFromListProduct"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name = "Seller respond request">
+        <classes>
+            <class name = "sellerPortal.test.requestSourcingSeller" >
+                <methods>
+                    <include name="verifyRespondFromListProductByFulfill"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name = "fulfill  verify respond request">
+        <classes>
+            <class name = "fulfillPortal.test.requestSourcingFulfill" >
+                <methods>
+                    <include name="verifyAcceptRequestBySeller"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

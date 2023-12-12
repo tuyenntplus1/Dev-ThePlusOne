@@ -1,0 +1,28 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "requestSourcing" verbose="10">
+    <test name = "VerifyRequestFromList">
+        <classes>
+            <class name = "sellerPortal.test.Product" >
+                <methods>
+                    <include name="addProduct"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name = "VerifyRequest">
+        <classes>
+            <class name = "sellerPortal.test.requestSourcingSeller" />
+        </classes>
+    </test>
+    <test name = "VerifyRequestFromAddProduct">
+        <classes>
+            <class name = "sellerPortal.test.Product" >
+                <methods>
+                    <include name="requestProduct"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
