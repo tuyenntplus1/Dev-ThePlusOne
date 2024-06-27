@@ -7,10 +7,10 @@ import sellerPortal.function.testProducts_function;
 import sellerPortal.function.seller_function;
 
 public class Product extends seller {
-//public String email = "soyero8019@ociun.com";
-//    public String password = "soyero8019@123";
-    public String email = "tuyentesttm@gmail.com";
-    public String password = "tuyentesttm@123";
+public String email = "soyero8019@ociun.com";
+public String password = "soyero8019@123";
+    // public String email = "tuyentesttm@gmail.com";
+    // public String password = "tuyentesttm@123";
     @Test
     public void verifymesErro() throws InterruptedException {
         login_function loginFunction = new login_function(driver);
