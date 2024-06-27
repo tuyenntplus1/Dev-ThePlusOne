@@ -57,7 +57,7 @@ jobs:
         username: ${{ secrets.EMAIL_USERNAME }}
         password: ${{ secrets.EMAIL_PASSWORD }}
         subject: GitHub Actions - Test Results
-        to: your-email@example.com
+        to: tuyennt@theplus1.net
         from: github-actions@example.com
         body: |
           The tests have failed. Please check the attached report.
