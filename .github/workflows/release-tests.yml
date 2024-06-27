@@ -33,8 +33,10 @@ jobs:
       run: mvn -B package --file pom.xml
 
     # Step 5: Run tests
-    - name: Run tests
-      run: mvn test
+    - name: Run TestNG tests
+      run: mvn test -Dsurefire.suiteXmlFiles=src/test/resources/myOrder.xml
+    - name: Run TestNG2 tests
+      run: mvn test -Dsurefire.suiteXmlFiles=src/test/resources/requsetPaygate.xml
 
     # Step 6: Generate test report (Surefire)
     - name: Generate test report
