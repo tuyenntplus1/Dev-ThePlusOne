@@ -24,7 +24,7 @@ public class checkout_function extends basePage {
     public void paypalCheckout() throws InterruptedException {
         commonFunction.scroll(sellpagePage.countDownTimer);
         commonFunction.click(sellpagePage.paypalBtn);
-//        commonFunction.click(sellpagePage.paypalBtn);
+
         commonFunction.switchWindowByTitle("Log in to your PayPal account");
         commonFunction.senKeys(checkoutPage.email,paypalUsername1);
         commonFunction.click(checkoutPage.nextBtn);
@@ -37,7 +37,7 @@ public class checkout_function extends basePage {
     public void paypalCheckout1() throws InterruptedException {
         commonFunction.scroll(sellpageRevenuePage.sectionVariants);
         commonFunction.click(sellpageRevenuePage.paypalBtn);
-//        commonFunction.click(sellpagePage.paypalBtn);
+
         commonFunction.switchWindowByTitle("Log in to your PayPal account");
         commonFunction.senKeys(checkoutPage.email,paypalUsername1);
         commonFunction.click(checkoutPage.nextBtn);
@@ -166,8 +166,6 @@ public class checkout_function extends basePage {
         commonFunction.verifyElement(checkout1Page.Total,"$56.31");
     }
     public void paypalProCheckout() throws InterruptedException {
-        commonFunction.click(sellpagePage.colorPink);
-        commonFunction.click(sellpagePage.sizeM);
         commonFunction.scroll(sellpagePage.sectionVariants);
         commonFunction.click(sellpagePage.addToCartBtn);
         commonFunction.verifyPage(cartPage.cartTitle);
