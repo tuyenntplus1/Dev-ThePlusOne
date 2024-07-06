@@ -30,6 +30,7 @@ public class checkout_function extends basePage {
         commonFunction.click(checkoutPage.nextBtn);
         commonFunction.senKeys(checkoutPage.password,paypalPassword1);
         commonFunction.click(checkoutPage.loginBtn);
+        Thread.sleep(5000);
         commonFunction.click(checkoutPage.submitBtn);
         driver.switchTo().window(mainWindowHandle);
         commonFunction.verifyElement(thankyouPage.textThankyou,"Thank you. Your order has been received.");

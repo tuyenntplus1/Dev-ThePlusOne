@@ -18,6 +18,7 @@ public class sellpageRevenue_function extends basePage {
          Thread.sleep(100000);
          driver.navigate().refresh();
 
+         Thread.sleep(3000);
          commonFunction.verifyElement(sellpageRevenuePage.announcement,"Sale Upto 30%");
          commonFunction.verifyElement(sellpageRevenuePage.sellpageTitle,"Zipper Quick Dry Sport Jacket Outwear For Yoga Gym Professional");
 //         commonFunction.verifyElement(sellpageRevenuePage.priceVariant,"$50.00");

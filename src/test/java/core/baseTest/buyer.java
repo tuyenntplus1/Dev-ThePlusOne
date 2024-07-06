@@ -19,7 +19,7 @@ public class buyer {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 //        String url = "https://utmtracking.kinthemain.online/";
 //        String url = "https://utmtracking.kinthemain.online/";
-        String url ="https://uwfptwoitd.rochenianly.space/";
+        String url ="https://revenuetm0207.proquality.online/";
         driver.get(url);
     }
     @AfterMethod

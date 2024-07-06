@@ -296,9 +296,10 @@ public class editSellpage_function extends basePage {
     public void configPaygate() throws InterruptedException {
         commonFunction.scroll(editSellpagePage.sectionLogo);
         commonFunction.click(editSellpagePage.addPaygateBtn);
+        Thread.sleep(5000);
 
         commonFunction.click(editSellpagePage.selectPaypalPaygate);
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         commonFunction.click(editSellpagePage.paypalPaygate1);
 
         commonFunction.click(editSellpagePage.selectStripePaygate);
